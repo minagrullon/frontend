@@ -22,8 +22,15 @@ export default function NewSnackForm() {
   const navigate = useNavigate();
 
   const addSnack = (newSnack) => {
+    const { image } = newSnack
+    let snack;
+    if(!image) {
+      snack = {...newSnack, image: "https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image"}
+    } else {
+      snack = newSnack
+    }
     axios
-      .post(`${API}/snacks`, newSnack)
+      .post(`${API}/snacks`, snack)
       .then(
         () => {
           navigate(`/snacks`);
@@ -38,8 +45,7 @@ export default function NewSnackForm() {
     fiber: 0,
     protein: 0,
     added_sugar: 0,
-    image:
-      "" || "https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image",
+    image: "",
   });
   const handleTextChange = (e) => {
     // playSound(typingSound);
