@@ -1,4 +1,4 @@
-import React from "react";
+import { Howl } from "howler";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { link, useParams, useNavigate } from "react-router-dom";
@@ -8,10 +8,23 @@ import empty from ".././assets/heart-regular.png";
 // CSS
 import "./SnackDetails.css";
 
-//
+//* Sound Effect
+import addSound from ".././assets/ding.mp3";
+import removeSound from ".././assets/remove.mp3";
+import typingSound from ".././assets/typing.mp3";
 const API = process.env.REACT_APP_API_URL;
 
 export default function SnackDetails() {
+  //* Sound Effec Function
+  const playSound = (src) => {
+    const mySound = new Howl({
+      src,
+      volume: 0.1,
+      html5: true,
+    });
+    mySound.play();
+  };
+
   const [snack, setSnack] = useState({});
   const { id } = useParams();
   const navigate = useNavigate();
@@ -29,7 +42,11 @@ export default function SnackDetails() {
   const deleteSnack = () => {
     axios
       .delete(`${API}/snacks/${id}`)
-      .then(() => navigate(`/snacks`))
+      .then(() =>
+        setTimeout(() => {
+          navigate(`/snacks`);
+        }, 1000)
+      )
       .catch((error) => console.warn(error));
   };
 
@@ -78,7 +95,14 @@ export default function SnackDetails() {
           >
             Edit
           </button>
-          <button onClick={deleteSnack}>Delete</button>
+          <button
+            onClick={() => {
+              playSound(removeSound);
+              deleteSnack();
+            }}
+          >
+            Delete
+          </button>
         </div>
       </div>
     </>

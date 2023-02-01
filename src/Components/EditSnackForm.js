@@ -1,11 +1,28 @@
-import React from "react";
+import { Howl } from "howler";
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+//* Sound Effects
+import addSound from ".././assets/ding.mp3";
+//
 const API = process.env.REACT_APP_API_URL;
 
 export default function EditSnackForm() {
+  //! Sound Effects function
+  // Create a function to play your sound effect
+  const playMySound = (src) => {
+    // sound is new instance of howl
+    const mySound = new Howl({
+      // src, where sound is coming from
+      src,
+      volume: 0.15,
+      html5: true,
+    });
+    // to play the sound effect when function is called
+    mySound.play();
+  };
+  //! -------
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -97,7 +114,9 @@ export default function EditSnackForm() {
               onChange={handleTextChange}
             />
           </label>
-          <button type="submit">Submit</button>
+          <button onClick={() => playMySound(addSound)} type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>
