@@ -1,11 +1,24 @@
-import React from "react";
+import { Howl } from "howler";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+//* Sound Effects
+import addSound from ".././assets/ding.mp3";
+import removeSound from ".././assets/remove.mp3";
+import typingSound from ".././assets/typing.mp3";
 const API = process.env.REACT_APP_API_URL;
 
 export default function NewSnackForm() {
+  //* Sound Effec Function
+  const playSound = (src) => {
+    const mySound = new Howl({
+      src,
+      volume: 0.1,
+      html5: true,
+    });
+    mySound.play();
+  };
+
   const navigate = useNavigate();
 
   const addSnack = (newSnack) => {
@@ -28,31 +41,15 @@ export default function NewSnackForm() {
     image:
       "" || "https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image",
   });
-  // const [image, setImage] = useState(
-  //   "https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image"
-  // );
-
   const handleTextChange = (e) => {
-    // handleImage(e);
+    // playSound(typingSound);
     setSnack({ ...snack, [e.target.id]: e.target.value });
-    // if (snack.image.length === 0) {
-    //   setSnack({
-    //     ...snack,
-    //     [e.target.id]: e.target.value,
-    //     [snack.image]:
-    //       "https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image",
-    //   });
-    // }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addSnack(snack);
   };
-
-  // const handleImage = (e) => {
-  //   setImage({ ...image, [e.target.id]: image });
-  // };
 
   return (
     <div className="new_form">
@@ -102,7 +99,6 @@ export default function NewSnackForm() {
             value={snack.image}
             type="string"
             placeholder="http://"
-            // defaultValue="https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image"
             onChange={handleTextChange}
           />
         </label>
