@@ -79,6 +79,7 @@
   width: 60vw;
   height: 30vh;
   margin-left: 20%;
+
   /* border: 2px solid green; */
 }
 
@@ -113,6 +114,7 @@
   background-size: cover;
   background-blend-mode: overlay;
   color: #333;
+  border-radius: 20px;
 }
 
 .card__front::before {
@@ -124,6 +126,7 @@
   left: var(--spacer);
   right: var(--spacer);
   border: 3px solid currentColor;
+  border-radius: 20px;
   transform: var(--level-one);
 }
 
@@ -143,9 +146,10 @@
   opacity: 0.7;
   height: 300px;
   width: 300px;
-  /* margin: 0;
-  padding: 0; */
- 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  margin-bottom: 12px;
 }
 
 .card__body {
@@ -158,15 +162,28 @@
 .body_image {
   height: 100px;
   width: 100px;
+  display: block;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
 }
 
 .card__back {
   transform: rotateY(0.5turn);
   color: var(--clr);
   background: #333;
+  border-radius: 20px;
 }
 
-.button_container{
-margin-top: 60px;
+.button_container {
+  margin-top: 60px;
+}
 
+.heartFilled {
+  height: 20px;
+}
+
+.heartEmpty {
+  height: 20px;
 }
