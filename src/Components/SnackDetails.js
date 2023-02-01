@@ -72,9 +72,9 @@ export default function SnackDetails() {
               <p>
                 HEALTHY ?:{" "}
                 {snack.is_healthy ? (
-                  <img src={heart} alt={heart} />
+                  <img className="heartFilled" src={heart} alt={heart} />
                 ) : (
-                  <img src={empty} alt={empty} />
+                  <img className="heartEmpty" src={empty} alt={empty} />
                 )}
               </p>
             </div>
