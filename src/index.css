@@ -43,3 +43,16 @@ button{
   text-align: center;
   color: rgb(135, 100, 49);
 }
+
+.nav_index{
+  color: aliceblue;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 5px;
+
+}
+
+.nav_index:hover{
+ color: rgb(255, 254, 254);
+ background-color: rgb(216, 91, 49);
+}

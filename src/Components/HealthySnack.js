@@ -5,6 +5,10 @@ import "../Pages/home.css"
 function HealthySnack() {
   return (
     <div className="Healthysnacks-btns-container">
+      <div className="bggimg">
+        <img src="https://cdn.dribbble.com/users/2008861/screenshots/14293050/media/81c828595bd4135765fa3df8087dd467.gif"
+        alt="bggimg"/>
+      </div>
       <div className="Healthysnacks-btns" >
         <h4>
           <a

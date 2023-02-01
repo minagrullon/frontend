@@ -8,7 +8,7 @@ export default function New() {
       <div>
       <img
           className="newimg"
-          src="https://i0.wp.com/i.pinimg.com/originals/93/a2/d7/93a2d7556d1d4fc891bfa32b753f01fd.gif"
+          src="https://cdn.dribbble.com/users/2008861/screenshots/15204794/media/1030bb3778e87d85708d88041b05a3d6.gif"
           alt="newimg"
         />
       </div>
