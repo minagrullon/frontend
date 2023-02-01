@@ -4,7 +4,13 @@ import heartOutline from "../assets/heart-regular.png";
 function HeartHealth({ snackHealth }) {
   return (
     <>
-      <p>????</p>
+      <p>
+        {snackHealth ? (
+          <img src={heartSolid} alt={heartSolid} />
+        ) : (
+          <img src={heartOutline} alt={heartOutline} />
+        )}
+      </p>
     </>
   );
 }
