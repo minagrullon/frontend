@@ -6,15 +6,16 @@
   width: auto;
   margin-top: 20px;
   /* margin: 0px 30px 20px -15px; */
+  
 }
 
+
 .single_snack {
-  display: block;
-  width: 400px;
-  /* height: auto; */
+  /* display: block; */
+  width: 300px;
   border: 2px solid black;
-border-radius: 25px; 
- margin: 20px 25px 15px 17px;
+  border-radius: 25px; 
+  margin: 20px 25px 15px 17px;
   text-align: center;
   padding: 5px;
   box-shadow: 5px 2px 15px 2px #517663;
@@ -28,3 +29,24 @@ border-radius: 25px;
 
  
 }
+
+img.indexbg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) { 
+  img.indexbg {
+    left: 50%;
+    margin-left: -512px;   
+  }
+}
+
+
+ 

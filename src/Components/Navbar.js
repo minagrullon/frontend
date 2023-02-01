@@ -9,9 +9,10 @@ export default function Navbar() {
           Snacks baby!
         </Link>
       </h1>
-      <button>
-        <Link to="/snacks/new">Add a yummy!</Link>
-      </button>
+      <Link to="/snacks/new">
+        {" "}
+        <button>Add a yummy!</button>
+      </Link>
     </nav>
   );
 }

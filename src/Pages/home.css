@@ -27,6 +27,14 @@ img.bg {
     
   }
 
+  .home-text{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-decoration: underline rgb(89, 186, 242);
+    text-shadow: #36395A;
+  }
+
 .home-btn {
   align-items: center;
   appearance: none;

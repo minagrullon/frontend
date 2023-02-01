@@ -1,0 +1,36 @@
+.New-Form{
+    margin-left: 340px;
+    margin-top: 70px;
+    padding: 30px;
+    box-shadow: rgba(89, 138, 197, 0.24) 10px 10px 18px;
+    /* margin: auto; */
+    width: 50%;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(71, 167, 56);
+    opacity: .9;
+    border-radius: 25px;
+color: aliceblue;
+}
+
+img.newimg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  @media screen and (max-width: 1024px) { 
+    img.newimg {
+      left: 50%;
+      margin-left: -512px;   
+    }
+  }
+
+
+   

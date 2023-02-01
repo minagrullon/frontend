@@ -16,6 +16,7 @@ nav {
   align-items: center;
   padding: 1em;
   padding-bottom: 0%;
+  color:yellow
   /* box-shadow: 2px 2px 4px rgb(193, 188, 188); */
   /* margin-bottom: 1em;   */
 }
@@ -31,3 +32,14 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
+
+button{
+  font-size: medium;
+  background-color: aliceblue;
+}
+
+.errorpg{
+  margin: 90px;
+  text-align: center;
+  color: rgb(135, 100, 49);
+}
