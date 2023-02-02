@@ -22,7 +22,7 @@
 
 .card {
   width: 50vw;
-  height: 80vh;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -99,6 +99,8 @@
   margin-right: auto;
   border-radius: 25px;
   margin-bottom: 15px;
+  box-shadow: 10px 10px 7px rgb(228, 78, 78);
+
 }
 
 .card__body {
@@ -118,12 +120,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 18px;
+  box-shadow: 10px 1px 5px rgb(228, 78, 78);
+
 }
 
 .card__back {
   transform: rotateY(0.5turn);
   color: var(--clr);
-  background: rgb(17, 16, 16);
+  background: rgb(5, 5, 5);
   border-radius: 20px;
 }
 
@@ -168,6 +172,11 @@
   font-size:23px ;
   background-color: rgb(0, 0, 0);
 }
+
+.healthy-p1{
+  background-color: rgb(0, 0, 0);
+}
+
 .button_container {
   display: flex;
   justify-content: space-between;
@@ -228,7 +237,7 @@
 @media screen and (max-width:480px) {
   .card {
     width: 80vw;
-    height: 80vh;  
+    height: 60vh;  
 }
 
   .body_image {

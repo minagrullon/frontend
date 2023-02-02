@@ -1,0 +1,48 @@
+.errorpg{
+    margin: 0 auto;
+ justify-content: center;
+ align-items: center;
+}
+
+.err-bg {
+    min-height: 120%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .err-bg {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .dwight {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 50%;
+      font-size: 20px;
+      margin-bottom: 20px;
+      
+    }
+  }
+  @media screen and (max-width:480px) {
+    .dwight{
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 60%;
+      font-size: 15px;
+      margin-bottom: 20px;
+  
+      
+    }
+  }
+  
+  
+  

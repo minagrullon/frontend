@@ -56,7 +56,8 @@ export default function SnackDetails() {
       <div className="bgg-detail-img">
         <img src="https://cdn5.vectorstock.com/i/1000x1000/08/24/background-of-fresh-and-healthy-food-vegetables-vector-20580824.jpg"
         alt="bggimg"
-        width={1450}/>
+        width={1550}
+        />
       </div>
         <div className="card__content">
           <div className="card__front">
@@ -71,9 +72,9 @@ export default function SnackDetails() {
           <div className="card__back">
             <div className="card__body">
               <img className="body_image" src={snack.image} alt="snack_icon" />
-              <p>Fiber: {snack.fiber}</p>
-              <p>Protein: {snack.protein}</p>
-              <p>Sugar: {snack.added_sugar}</p>
+              <p className="healthy-p1">Fiber: {snack.fiber}</p>
+              <p className="healthy-p1">Protein: {snack.protein}</p>
+              <p className="healthy-p1">Sugar: {snack.added_sugar}</p>
               <p className="healthy-p">
                 HEALTHY ?:{" "}
                 {snack.is_healthy ? (
