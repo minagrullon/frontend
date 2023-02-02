@@ -1,5 +1,7 @@
 import React from "react";
 import NewSnackForm from "../Components/NewSnackForm";
+import { Link } from "react-router-dom";
+
 import "./New.css"
 
 export default function New() {
@@ -22,6 +24,10 @@ export default function New() {
         <h4>Add a new Snack!</h4>
       <NewSnackForm />
       </div>
+      <Link to="/snacks">
+        {" "}
+        <button className="backing-btn">Back</button>
+      </Link>
       
     </div>
   );

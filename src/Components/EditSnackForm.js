@@ -114,7 +114,7 @@ export default function EditSnackForm() {
               onChange={handleTextChange}
             />
           </label>
-          <button onClick={() => playMySound(addSound)} type="submit">
+          <button className="submit" onClick={() => playMySound(addSound)} type="submit">
             Submit
           </button>
         </form>

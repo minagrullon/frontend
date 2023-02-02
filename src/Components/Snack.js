@@ -10,9 +10,9 @@ export default function Snack({
     <Link to={`/snacks/${id}`}>
       <div className="single_snack">
         <img className="snack-img" src={image} alt={image} />
-        <h5>{name}</h5>
-        <HeartHealth snackHealth={is_healthy} />
+        <h5 className="snack-title">{name}</h5><HeartHealth snackHealth={is_healthy} />
       </div>
+      <div></div>
     </Link>
     // </div>
   );

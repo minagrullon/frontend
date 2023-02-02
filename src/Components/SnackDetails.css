@@ -65,7 +65,7 @@
   --fw-normal: 400;
   --fw-bold: 700;
 
-  --clr: #b7c9e5;
+  --clr: #040404;
 }
 
 *,
@@ -76,9 +76,10 @@
 }
 
 .card {
-  width: 60vw;
+  width: 40vw;
   height: 30vh;
-  margin-left: 20%;
+  margin-left: 400px;
+  margin-top: 30px;
 
   /* border: 2px solid green; */
 }
@@ -135,6 +136,7 @@
   transform: var(--level-three);
   order: 2;
   text-transform: uppercase;
+  color: aliceblue;
 }
 
 .card__subtitle {
@@ -143,25 +145,26 @@
   /* letter-spacing: 4px; */
   /* font-size: 0.75rem; */
   /* font-weight: var(--fw-bold); */
-  opacity: 0.7;
+  /* opacity: 0.7; */
   height: 300px;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .card__body {
   transform: var(--level-two);
   font-weight: var(fw-normal);
-  font-size: 1.5rem;
+  font-size: 25px;
   line-height: 1.6;
+  color: aliceblue;
 }
 
 .body_image {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   display: block;
   border-radius: 50%;
   margin-left: auto;
@@ -172,7 +175,7 @@
 .card__back {
   transform: rotateY(0.5turn);
   color: var(--clr);
-  background: #333;
+  background: rgb(17, 16, 16);
   border-radius: 20px;
 }
 
@@ -186,4 +189,72 @@
 
 .heartEmpty {
   height: 20px;
+}
+
+.bgg-detail-img{
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+    
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+    
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+}
+
+@media screen and (max-width: 1024px) { 
+ .bgg-detail-img {
+    left: 50%;
+    margin-left: -512px;   
+  }
+}
+
+
+.button_container{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.show-back-btn{
+  color: rgb(8, 8, 8);
+  background-color: rgb(241, 242, 249);
+  border: #040404 solid 2px;
+}
+
+.show-back-btn:hover{
+  color: rgb(8, 8, 8);
+  background-color: rgb(64, 98, 248);
+  border: #040404 solid 2px;
+}
+
+.show-edit-btn{
+  color: rgb(10, 10, 10);
+  background-color: rgb(251, 249, 249);
+  border: #040404 solid 2px;
+}
+
+.show-edit-btn:hover{
+  color: rgb(8, 8, 8);
+  background-color: rgb(13, 188, 89);
+  border: #040404 solid 2px;
+}
+
+.show-delete-btn{
+  color: rgb(10, 10, 10);
+  background-color: rgb(240, 222, 222);
+  border: #040404 solid 2px;
+}
+
+.show-delete-btn:hover{
+  color: rgb(8, 8, 8);
+  background-color: rgb(240, 35, 73);
+  border: #040404 solid 2px;
 }

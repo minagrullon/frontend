@@ -25,7 +25,7 @@ export default function NewSnackForm() {
     const { image } = newSnack
     let snack;
     if(!image) {
-      snack = {...newSnack, image: "https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image"}
+      snack = {...newSnack, image: "https://i.pinimg.com/564x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975.jpg"}
     } else {
       snack = newSnack
     }
@@ -108,7 +108,7 @@ export default function NewSnackForm() {
             onChange={handleTextChange}
           />
         </label>
-        <button type="submit">Submit</button>
+        <button className="submit" type="submit">Submit</button>
       </form>
     </div>
   );

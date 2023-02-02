@@ -25,13 +25,13 @@ export default function Edit() {
        <div>
         <h4>Edit a Snack</h4>
       <EditSnackForm />
-      <div className="back-btn">
-        <Link to={`/snacks/${id}`}>Back</Link>
-      </div>
+      
        </div>
-           
+        
       </div>
-   
+     <div className="back-btn">
+        <Link to={`/snacks/${id}`}>NeverMind!</Link>
+      </div> 
     </div>
   );
 }

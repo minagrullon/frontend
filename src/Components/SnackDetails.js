@@ -3,8 +3,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { link, useParams, useNavigate } from "react-router-dom";
 
-import heart from ".././assets/heart-solid.png";
-import empty from ".././assets/heart-regular.png";
+import heart from ".././assets/healthyfullheart.png";
+import empty from ".././assets/emptyred.png";
 // CSS
 import "./SnackDetails.css";
 
@@ -53,6 +53,11 @@ export default function SnackDetails() {
   return (
     <>
       <div className="card">
+      <div className="bgg-detail-img">
+        <img src="https://cdn5.vectorstock.com/i/1000x1000/08/24/background-of-fresh-and-healthy-food-vegetables-vector-20580824.jpg"
+        alt="bggimg"
+        width={1400}/>
+      </div>
         <div className="card__content">
           <div className="card__front">
             <h3 className="card__title">{snack.name}</h3>
@@ -81,7 +86,8 @@ export default function SnackDetails() {
           </div>
         </div>
         <div className="button_container">
-          <button
+          <button 
+          className="show-back-btn"
             onClick={() => {
               navigate(`/snacks`);
             }}
@@ -89,6 +95,7 @@ export default function SnackDetails() {
             Back!
           </button>
           <button
+          className="show-edit-btn"
             onClick={() => {
               navigate(`/snacks/${id}/edit`);
             }}
@@ -96,6 +103,7 @@ export default function SnackDetails() {
             Edit
           </button>
           <button
+          className="show-delete-btn"
             onClick={() => {
               playSound(removeSound);
               deleteSnack();

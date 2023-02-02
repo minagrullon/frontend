@@ -33,11 +33,19 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-button{
+.navbtn{
   font-size: medium;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
+color: #161616;
+border: #161616 solid 2x;
 }
 
+.navbtn:hover {
+ background-color: rgb(49, 130, 40);
+ color:#161616;
+ border: #161616 solid 2x;
+
+}
 .errorpg{
   margin: 90px;
   text-align: center;
