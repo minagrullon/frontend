@@ -17,11 +17,10 @@
 }
 
 .editform {
-  margin-left: 340px;
+  margin: 0 auto;
   margin-top: 40px;
   padding: 30px;
   box-shadow: rgba(23, 23, 23, 0.24) 10px 10px 18px;
-  /* margin: auto; */
   width: 50%;
   font-size: 20px;
   justify-content: right;
@@ -34,11 +33,7 @@
 
 }
 
-/* 
-.back-btn{
-    font-size: 20px;
 
-} */
 
 /* CSS */
 .back-btn {
@@ -57,7 +52,7 @@
   cursor: pointer;
   display: inline-block;
   font-family: Neucha, sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 23px;
   outline: none;
   padding: 0.75rem;
@@ -70,9 +65,8 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  position: fixed;
   bottom: 0;
-  margin: 10px;
+  margin: 15px;
 }
 
 .back-btn:hover {
@@ -99,3 +93,26 @@ a {
 a:hover {
    color: rgb(194, 22, 50)
 }
+
+@media screen and (max-width:768px) {
+  .editform {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+  }
+}
+@media screen and (max-width:480px) {
+  .editform{
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 80%;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    
+  }
+}
+
