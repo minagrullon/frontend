@@ -1,43 +1,44 @@
 .editimg {
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  @media screen and (max-width: 1024px) { 
-    .editimg {
-      left: 50%;
-      margin-left: -512px;   
-    }
-  }
-
-  .editform{
-    margin-left: 340px;
-    margin-top: 70px;
-    padding: 30px;
-    box-shadow: rgba(89, 138, 197, 0.24) 10px 10px 18px;
-    /* margin: auto; */
-    width: 50%;
-    font-size: 20px;
-    justify-content: right;
-    text-align: center;
-    background-color: rgb(218, 94, 119);;
-    border-radius: 25px;
-color: rgb(14, 13, 13);
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
+@media screen and (max-width: 1024px) {
+  .editimg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+.editform {
+  margin-left: 340px;
+  margin-top: 40px;
+  padding: 30px;
+  box-shadow: rgba(23, 23, 23, 0.24) 10px 10px 18px;
+  /* margin: auto; */
+  width: 50%;
+  font-size: 20px;
+  justify-content: right;
+  text-align: center;
+  background-color: rgb(218, 94, 119);
+  border-radius: 25px;
+  color: rgb(14, 13, 13);
+  border: rgb(128, 122, 122) solid 2px;
+  margin-bottom: 0px;
+
+}
 
 /* 
 .back-btn{
     font-size: 20px;
 
 } */
-
 
 /* CSS */
 .back-btn {
@@ -50,7 +51,7 @@ color: rgb(14, 13, 13);
   border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #41403e;
   cursor: pointer;
@@ -59,7 +60,7 @@ color: rgb(14, 13, 13);
   font-size: 2rem;
   line-height: 23px;
   outline: none;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -69,13 +70,31 @@ color: rgb(14, 13, 13);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin: 10px;
+  margin-left: 60px;
 }
 
 .back-btn:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
+  color: black;
 }
 
 .back-btn:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.submit {
+  background-color: #fff;
+  color: black;
+  margin-top: 10px ;
+  margin-bottom: 0px;
+
+}
+
+a {
+  color: rgb(7, 7, 7);
+}
+a:hover {
+   color: rgb(194, 22, 50)
 }

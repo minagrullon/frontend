@@ -1,0 +1,286 @@
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+/*button 1 */
+
+.Healthysnacks-btns-1{
+    align-items: center;
+    appearance: none;
+    background-color: #ef679d;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(11, 11, 11, 0.4) 0 2px 24px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#151516 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 28px;
+  margin-top: 20px;
+  justify-content: center;}
+  
+  .Healthysnacks-btns-1:focus {
+    box-shadow: #7373ae 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .Healthysnacks-btns-1:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .Healthysnacks-btns-1:active {
+    box-shadow: #6969b0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+/*button 2 */
+  .Healthysnacks-btns-2{
+    align-items: center;
+    appearance: none;
+    background-color: #d4812e;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(11, 11, 11, 0.4) 0 2px 24px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#151516 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 28px;
+  margin-top: 20px;
+  justify-content: center;}
+  
+  .Healthysnacks-btns-2:focus {
+    box-shadow: #090909 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .Healthysnacks-btns-2:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #131313 0 -3px 0 inset;
+    transform: translateY(-2px);
+    color: #000000;
+  }
+  
+  .Healthysnacks-btns-2:active {
+    box-shadow: #040404 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  /*button 3 */
+  .Healthysnacks-btns-3{
+    align-items: center;
+    appearance: none;
+    background-color: #67a4ef;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(11, 11, 11, 0.4) 0 2px 24px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#151516 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 28px;
+  margin-top: 20px;
+  justify-content: center;}
+  
+  .Healthysnacks-btns-3:focus {
+    box-shadow: #7373ae 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .Healthysnacks-btns-3:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .Healthysnacks-btns-3:active {
+    box-shadow: #6969b0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+/*button 4 */
+  .Healthysnacks-btns-4{
+    align-items: center;
+    appearance: none;
+    background-color: #50f28b;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(11, 11, 11, 0.4) 0 2px 24px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#151516 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 28px;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+  
+  .Healthysnacks-btns-4:focus {
+    box-shadow: #7373ae 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .Healthysnacks-btns-4:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .Healthysnacks-btns-4:active {
+    box-shadow: #6969b0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  .Healthysnacks-btns-container{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+  text-align: center;
+  margin: 50px;
+  }
+
+  .bggimg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+   .bggimg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+  
+  .backing-btn{
+
+        align-self: center;
+        background-color: #fff;
+        background-image: none;
+        background-position: 0 90%;
+        background-repeat: repeat no-repeat;
+        background-size: 4px 3px;
+        border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+        border-style: solid;
+        border-width: 2px;
+        box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+        box-sizing: border-box;
+        color: #41403e;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Neucha, sans-serif;
+        font-size: 2rem;
+        line-height: 23px;
+        outline: none;
+        padding: 0.75rem;
+        text-decoration: none;
+        transition: all 235ms ease-in-out;
+        border-bottom-left-radius: 15px 255px;
+        border-bottom-right-radius: 225px 15px;
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin: 10px;
+        margin-left: 60px;
+      }
+      
+      .backing-btn:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+        transform: translate3d(0, 2px, 0);
+        color: black;
+      }
+      
+      .backing-btn:focus {
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+      }
+      
+    
+      
+      a {
+        color: rgb(7, 7, 7);
+      }
+      a:hover {
+         color: rgb(194, 22, 50)
+      }
+      

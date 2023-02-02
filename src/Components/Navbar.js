@@ -11,7 +11,7 @@ export default function Navbar() {
       </h1>
       <Link to="/snacks/new">
         {" "}
-        <button>Add a yummy!</button>
+        <button className="navbtn">Add a yummy!</button>
       </Link>
     </nav>
   );

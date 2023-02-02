@@ -6,28 +6,24 @@
   width: auto;
   margin-top: 20px;
   /* margin: 0px 30px 20px -15px; */
-  
 }
-
 
 .single_snack {
   /* display: block; */
-  width: 300px;
+  width: 310px;
   border: 2px solid black;
-  border-radius: 25px; 
-  margin: 20px 25px 15px 17px;
+  border-radius: 25px;
+  margin: 20px 65px 25px 65px;
   text-align: center;
   padding: 5px;
   box-shadow: 5px 2px 15px 2px #517663;
 }
 
 .snack-img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 25px; 
-
- 
+  width: 100%;
+  min-height: 300px;
+  vertical-align: middle;
+  border-radius: 25px;
 }
 
 img.indexbg {
@@ -39,14 +35,24 @@ img.indexbg {
   top: 0;
   left: 0;
   z-index: -1;
+  opacity: 0.4;
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   img.indexbg {
     left: 50%;
-    margin-left: -512px;   
+    margin-left: -512px;
   }
 }
 
+.heart img {
+  width: 40px;
+  margin-top: 0px;
+}
 
- 
+.snack-title {
+  margin: 0;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
