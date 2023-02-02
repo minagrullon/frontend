@@ -84,8 +84,9 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  position: fixed;
+  bottom: 0;
   margin: 10px;
-  margin-left: 60px;
 }
 
 .backing-btn:hover {
@@ -108,8 +109,7 @@ a:hover {
 .submit {
   background-color: rgb(255, 255, 255);
   color: black;
-  margin-top: 10px ;
+  margin-top: 10px;
   margin-bottom: 0px;
   font-size: 12px;
-
 }

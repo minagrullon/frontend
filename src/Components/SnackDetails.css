@@ -1,59 +1,4 @@
-/* .snack_details_container {
-  display: grid;
-  place-items: center;
-  width: 400px;
 
-  height: 60vh;
-}
-
-.card_content {
-  text-align: center;
-  position: relative;
-  padding: 5em;
-  transition: transform 2s;
-  background: blue;
-  transform-style: preserve-3d;
-   flat
-}
-
-.card_front,
-.card_back {
-  THEY NEED TO OVER LAP
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 3em;
-  backface-visibility: hidden; 
-  hide content when flipped
-  transform-style: preserve-3d;
-}
-.card_front {
-  background: aquamarine;
-  transform: rotateY(0.25turn);
-}
-
-.card_title {
-  font-size: 3rem;
-  transform: translateZ(200px);
-}
-.card_subtitle {
-  transform: translateZ(200px);
-}
-.card_body {
-  transform-style: translateZ(2rem);
-}
-.card_back {
-  to flip words and make readable 
-  transform: rotateY(".5turn");
-  background: lightblue;
-}
-.snack_details_container:hover .card_content {
-  cursor: pointer;
-  transform: rotateY(0.5turn); 
-  or 45deg
-} */
 
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
 /* ROOT FUNCTIONS */
@@ -76,11 +21,12 @@
 }
 
 .card {
-  width: 40vw;
-  height: 30vh;
-  margin-left: 400px;
+  width: 50vw;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
-
+  display: grid;
   /* border: 2px solid green; */
 }
 
@@ -133,6 +79,7 @@
 
 .card__title {
   font-size: 3.5rem;
+  margin-top: 2rem;
   transform: var(--level-three);
   order: 2;
   text-transform: uppercase;
@@ -159,7 +106,8 @@
   font-weight: var(fw-normal);
   font-size: 25px;
   line-height: 1.6;
-  color: aliceblue;
+  color: rgb(252, 252, 252);
+ 
 }
 
 .body_image {
@@ -191,70 +139,115 @@
   height: 20px;
 }
 
-.bgg-detail-img{
-
+.bgg-detail-img {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-    
+
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
-    
+
   /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
+}
   
-}
-
-@media screen and (max-width: 1024px) { 
- .bgg-detail-img {
-    left: 50%;
-    margin-left: -512px;   
+  
+  @media screen and (max-width: 1024px) {
+    .bgg-detail-img {
+      left: 50%;
+      margin-left: -512px;
+    }
   }
+  
+
+.healthy-p{
+  font-size:23px ;
 }
-
-
-.button_container{
+.button_container {
   display: flex;
   justify-content: space-between;
   margin: 15px;
 }
 
-.show-back-btn{
+.show-back-btn {
   color: rgb(8, 8, 8);
   background-color: rgb(241, 242, 249);
   border: #040404 solid 2px;
 }
 
-.show-back-btn:hover{
+.show-back-btn:hover {
   color: rgb(8, 8, 8);
   background-color: rgb(64, 98, 248);
   border: #040404 solid 2px;
 }
 
-.show-edit-btn{
+.show-edit-btn {
   color: rgb(10, 10, 10);
   background-color: rgb(251, 249, 249);
   border: #040404 solid 2px;
 }
 
-.show-edit-btn:hover{
+.show-edit-btn:hover {
   color: rgb(8, 8, 8);
   background-color: rgb(13, 188, 89);
   border: #040404 solid 2px;
 }
 
-.show-delete-btn{
+.show-delete-btn {
   color: rgb(10, 10, 10);
   background-color: rgb(240, 222, 222);
   border: #040404 solid 2px;
 }
 
-.show-delete-btn:hover{
+.show-delete-btn:hover {
   color: rgb(8, 8, 8);
   background-color: rgb(240, 35, 73);
   border: #040404 solid 2px;
+}
+
+/* 768 */
+@media screen and (max-width:768px) {
+  .card {
+    width: 60vw;
+    height: 120vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: grid;
+    /* border: 2px solid green; */
+  }
+  
+}
+
+/* 480 */
+@media screen and (max-width:480px) {
+  .card {
+    width: 80vw;
+    height: 80vh;  
+}
+
+  .body_image {
+    height: 150px;
+    width: 150px;
+}
+.card__subtitle {
+ 
+  height: 200px;
+  width: 200px;
+
+}
+.card__title {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0%;
+}
+h1{
+  margin: 0%;
+  padding: 0%;
+}
+
 }

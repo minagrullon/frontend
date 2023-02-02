@@ -56,3 +56,20 @@ img.indexbg {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
 }
+
+/* 768 */
+
+@media screen and (max-width:768px) {
+
+  .single_snack {
+    /* display: block; */
+    width: 250px;
+    height: 280px;
+  }
+  .snack-img {
+    width: 60%;
+    min-height: 150px;
+  }
+  
+}
+
