@@ -15,7 +15,7 @@ export default function Error() {
         />
        </div>
       <div className="errorpg">
-        <h3>Error ya broke soemthing! ya fool</h3>;
+        <h3 className="error-h2">Error ya broke soemthing! ya fool</h3>;
         <img
           className="dwight"
           src="https://media.tenor.com/SVcLNZOi8bkAAAAM/rainn-wilson-evil-laugh.gif"

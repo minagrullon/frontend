@@ -20,7 +20,7 @@ export default function New() {
       </div>
       <Link to="/snacks">
         {" "}
-        <button className="backing-btn">Back</button>
+        <button className="backing-btn2">Back</button>
       </Link>
     </div>
   );

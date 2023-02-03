@@ -61,7 +61,7 @@
   }
 }
 
-.backing-btn {
+.backing-btn2 {
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -80,7 +80,7 @@
   font-size: 1.2rem;
   line-height: 23px;
   outline: none;
-  padding: 0.75rem;
+  padding: 1rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -90,17 +90,19 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  position: relative;
   bottom: 0;
-  margin: 15px;
+  margin-left: 15px;
+  margin-top: 10%;
 }
 
-.backing-btn:hover {
+.backing-btn2:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
   color: black;
 }
 
-.backing-btn:focus {
+.backing-btn2:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
@@ -125,9 +127,10 @@ a:hover {
     margin-top: 70px;
     width: 80%;
     font-size: 20px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
   }
+
+  
 }
 @media screen and (max-width:480px) {
   .New-Form {
