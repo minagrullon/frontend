@@ -1,6 +1,6 @@
 import { Howl } from "howler";
 import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 //* Sound Effects
@@ -114,7 +114,11 @@ export default function EditSnackForm() {
               onChange={handleTextChange}
             />
           </label>
-          <button className="submit" onClick={() => playMySound(addSound)} type="submit">
+          <button
+            className="submit"
+            onClick={() => playMySound(addSound)}
+            type="submit"
+          >
             Submit
           </button>
         </form>
