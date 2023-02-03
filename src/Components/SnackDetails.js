@@ -1,7 +1,7 @@
 import { Howl } from "howler";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import heart from ".././assets/healthyfullheart.png";
 import empty from ".././assets/emptyred.png";
@@ -9,17 +9,15 @@ import empty from ".././assets/emptyred.png";
 import "./SnackDetails.css";
 
 //* Sound Effect
-import addSound from ".././assets/ding.mp3";
 import removeSound from ".././assets/remove.mp3";
-import typingSound from ".././assets/typing.mp3";
 const API = process.env.REACT_APP_API_URL;
 
 export default function SnackDetails() {
-  //* Sound Effec Function
+  //* Sound Effect Function
   const playSound = (src) => {
     const mySound = new Howl({
       src,
-      volume: 0.1,
+      volume: 0.15,
       html5: true,
     });
     mySound.play();
@@ -53,11 +51,13 @@ export default function SnackDetails() {
   return (
     <>
       <div className="card">
-      <div className="bgg-detail-img">
-        <img src="https://cdn5.vectorstock.com/i/1000x1000/08/24/background-of-fresh-and-healthy-food-vegetables-vector-20580824.jpg"
-        alt="bggimg"
-        width={1450}/>
-      </div>
+        <div className="bgg-detail-img">
+          <img
+            src="https://cdn5.vectorstock.com/i/1000x1000/08/24/background-of-fresh-and-healthy-food-vegetables-vector-20580824.jpg"
+            alt="bggimg"
+            width={1450}
+          />
+        </div>
         <div className="card__content">
           <div className="card__front">
             <h3 className="card__title">{snack.name}</h3>
@@ -86,8 +86,8 @@ export default function SnackDetails() {
           </div>
         </div>
         <div className="button_container">
-          <button 
-          className="show-back-btn"
+          <button
+            className="show-back-btn"
             onClick={() => {
               navigate(`/snacks`);
             }}
@@ -95,7 +95,7 @@ export default function SnackDetails() {
             Back!
           </button>
           <button
-          className="show-edit-btn"
+            className="show-edit-btn"
             onClick={() => {
               navigate(`/snacks/${id}/edit`);
             }}
@@ -103,7 +103,7 @@ export default function SnackDetails() {
             Edit
           </button>
           <button
-          className="show-delete-btn"
+            className="show-delete-btn"
             onClick={() => {
               playSound(removeSound);
               deleteSnack();
