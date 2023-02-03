@@ -1,33 +1,23 @@
-import { Howl } from "howler";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-//* Sound Effects
-import addSound from ".././assets/ding.mp3";
-import removeSound from ".././assets/remove.mp3";
-import typingSound from ".././assets/typing.mp3";
+
 const API = process.env.REACT_APP_API_URL;
 
 export default function NewSnackForm() {
-  //* Sound Effec Function
-  const playSound = (src) => {
-    const mySound = new Howl({
-      src,
-      volume: 0.1,
-      html5: true,
-    });
-    mySound.play();
-  };
-
   const navigate = useNavigate();
 
   const addSnack = (newSnack) => {
-    const { image } = newSnack
+    const { image } = newSnack;
     let snack;
-    if(!image) {
-      snack = {...newSnack, image: "https://i.pinimg.com/564x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975.jpg"}
+    if (!image) {
+      snack = {
+        ...newSnack,
+        image:
+          "https://i.pinimg.com/564x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975.jpg",
+      };
     } else {
-      snack = newSnack
+      snack = newSnack;
     }
     axios
       .post(`${API}/snacks`, snack)
@@ -48,7 +38,6 @@ export default function NewSnackForm() {
     image: "",
   });
   const handleTextChange = (e) => {
-    // playSound(typingSound);
     setSnack({ ...snack, [e.target.id]: e.target.value });
   };
 
@@ -108,7 +97,9 @@ export default function NewSnackForm() {
             onChange={handleTextChange}
           />
         </label>
-        <button className="submit" type="submit">Submit</button>
+        <button className="submit" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

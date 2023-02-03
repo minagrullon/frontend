@@ -20,7 +20,6 @@ export default function Snacks() {
       {snacks.map((snack) => {
         return <Snack key={snack.id} snack={snack} />;
       })}
-      {/* <p>nom nom nom nom nom nom nom nom</p> */}
     </div>
   );
 }
